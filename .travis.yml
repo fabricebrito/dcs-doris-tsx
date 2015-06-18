@@ -1,4 +1,8 @@
 before_install:
   - sudo apt-get install rpm
-
+  - gem install package_cloud
+  
 language: java
+
+script:
+  - package_cloud push fbrito/dcs 
