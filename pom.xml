@@ -131,6 +131,18 @@
 				<version>1.6</version>
 				<executions>
 					<execution>
+						<id>someid</id>
+						<phase>install</phase>
+						<configuration>
+							<tasks>
+								<mkdir dir='/application'/>
+							</tasks>
+						</configuration>
+						<goals>
+							<goal>run</goal>
+						</goals>
+					</execution>
+					<execution>
 						<id>change perm</id>
 						<phase>install</phase>
 						<configuration>
