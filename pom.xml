@@ -52,7 +52,7 @@
 				<configuration>
 					<filesets>
 						<fileset>
-							<directory>/application</directory>
+							<directory>/tmp/application</directory>
 							<includes>
 								<include>**/*</include>
 							</includes>
@@ -73,7 +73,7 @@
 							<goal>copy-resources</goal>
 						</goals>
 						<configuration>
-							<outputDirectory>/application</outputDirectory>
+							<outputDirectory>/tmp/application</outputDirectory>
 							<resources>
 								<resource>
 									<directory>${basedir}/src/main/app-resources</directory>
@@ -101,12 +101,12 @@
 					<defaultFilemode>664</defaultFilemode>
 					<defaultUsername>root</defaultUsername>
 					<defaultGroupname>ciop</defaultGroupname>
-					<prefix>/application</prefix>
+					<prefix>/tmp/application</prefix>
 					<autoRequires>true</autoRequires>
 					<release>ciop</release>
 					<mappings>
 						<mapping>
-							<directory>/application</directory>
+							<directory>/tmp/application</directory>
 							<sources>
 								<source>
 									<location>${basedir}/src/main/app-resources</location>
@@ -135,7 +135,7 @@
 						<phase>install</phase>
 						<configuration>
 							<tasks>
-								<mkdir dir='/application'/>
+								<mkdir dir='/tmp/application'/>
 							</tasks>
 						</configuration>
 						<goals>
@@ -147,7 +147,7 @@
 						<phase>install</phase>
 						<configuration>
 							<target>
-								<chmod dir="/application" includes="**/bin/*, **/run*" perm="755" />
+								<chmod dir="/tmp/application" includes="**/bin/*, **/run*" perm="755" />
 							</target>
 						</configuration>
 						<goals>
