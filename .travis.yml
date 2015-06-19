@@ -2,6 +2,7 @@ before_install:
   - sudo apt-get install rpm
   - gem install package_cloud
   - sudo mkdir -p /opt/dcs-application
+  - sudo chmod -R 777 /opt/dcs-application
   
 language: java
 
