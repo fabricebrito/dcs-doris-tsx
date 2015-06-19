@@ -5,4 +5,4 @@ before_install:
 language: java
 
 script:
-  - package_cloud push fbrito/dcs /home/travis/.m2/repository/com/terradue/ciop/app/dcs-doris-tsx/0.1/dcs-doris-tsx-0.1.rpm
+  - package_cloud push fbrito/dcs/el/5 /home/travis/.m2/repository/com/terradue/ciop/app/dcs-doris-tsx/0.1/dcs-doris-tsx-0.1.rpm
