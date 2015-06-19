@@ -52,7 +52,7 @@
 				<configuration>
 					<filesets>
 						<fileset>
-							<directory>/tmp/application</directory>
+							<directory>/opt/dcs-application</directory>
 							<includes>
 								<include>**/*</include>
 							</includes>
@@ -73,7 +73,7 @@
 							<goal>copy-resources</goal>
 						</goals>
 						<configuration>
-							<outputDirectory>/tmp/application</outputDirectory>
+							<outputDirectory>/opt/dcs-application</outputDirectory>
 							<resources>
 								<resource>
 									<directory>${basedir}/src/main/app-resources</directory>
@@ -101,12 +101,12 @@
 					<defaultFilemode>664</defaultFilemode>
 					<defaultUsername>root</defaultUsername>
 					<defaultGroupname>ciop</defaultGroupname>
-					<prefix>/tmp/application</prefix>
+					<prefix>/opt/dcs-application</prefix>
 					<autoRequires>true</autoRequires>
 					<release>ciop</release>
 					<mappings>
 						<mapping>
-							<directory>/tmp/application</directory>
+							<directory>/opt/dcs-application</directory>
 							<sources>
 								<source>
 									<location>${basedir}/src/main/app-resources</location>
@@ -130,7 +130,7 @@
 				<artifactId>maven-antrun-plugin</artifactId>
 				<version>1.6</version>
 				<executions>
-					<execution>
+<!--					<execution>
 						<id>someid</id>
 						<phase>install</phase>
 						<configuration>
@@ -142,12 +142,13 @@
 							<goal>run</goal>
 						</goals>
 					</execution>
+					-->
 					<execution>
 						<id>change perm</id>
 						<phase>install</phase>
 						<configuration>
 							<target>
-								<chmod dir="/tmp/application" includes="**/bin/*, **/run*" perm="755" />
+								<chmod dir="/opt/dcs-application" includes="**/bin/*, **/run*" perm="755" />
 							</target>
 						</configuration>
 						<goals>
