@@ -1,5 +1,7 @@
 ## Developer Cloud Sandbox TerraSAR-X processing with ADORE DORIS 
 
+[![Build Status](https://travis-ci.org/fabricebrito/dcs-doris-tsx.svg?branch=develop)](https://travis-ci.org/fabricebrito/dcs-doris-tsx)
+
 The Delft Institute of Earth Observation and Space Systems of Delft University of Technology has developed an Interferometric Synthetic Aperture Radar (InSAR) processor named [Doris](http://doris.tudelft.nl/) (Delft object-oriented radar interferometric software)
 
 Doris is a standalone program that can perform most common steps of the interferometric radar processing in a modular set up. Doris handles SLC (Single Look Complex) data to generate interferometric products, and can be used to georeference unwrapped products.
