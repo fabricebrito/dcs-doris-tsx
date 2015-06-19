@@ -52,7 +52,7 @@
 				<configuration>
 					<filesets>
 						<fileset>
-							<directory>/opt/dcs-application</directory>
+							<directory>/application</directory>
 							<includes>
 								<include>**/*</include>
 							</includes>
@@ -73,7 +73,7 @@
 							<goal>copy-resources</goal>
 						</goals>
 						<configuration>
-							<outputDirectory>/opt/dcs-application</outputDirectory>
+							<outputDirectory>/application</outputDirectory>
 							<resources>
 								<resource>
 									<directory>${basedir}/src/main/app-resources</directory>
@@ -101,12 +101,12 @@
 					<defaultFilemode>664</defaultFilemode>
 					<defaultUsername>root</defaultUsername>
 					<defaultGroupname>ciop</defaultGroupname>
-					<prefix>/opt/dcs-application</prefix>
+					<prefix>/application</prefix>
 					<autoRequires>true</autoRequires>
 					<release>ciop</release>
 					<mappings>
 						<mapping>
-							<directory>/opt/dcs-application</directory>
+							<directory>/application</directory>
 							<sources>
 								<source>
 									<location>${basedir}/src/main/app-resources</location>
@@ -148,7 +148,7 @@
 						<phase>install</phase>
 						<configuration>
 							<target>
-								<chmod dir="/opt/dcs-application" includes="**/bin/*, **/run*" perm="755" />
+								<chmod dir="/application" includes="**/bin/*, **/run*" perm="755" />
 							</target>
 						</configuration>
 						<goals>
