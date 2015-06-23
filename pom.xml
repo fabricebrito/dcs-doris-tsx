@@ -7,7 +7,7 @@
 	<artifactId>dcs-doris-tsx</artifactId>
 	<packaging>rpm</packaging>
 	<description>TerraSAR-X coseismic interferogram dcs application using ADORE DORIS</description>
-	<version>0.1</version>
+	<version>0.2</version>
 
 	<scm>
 		<connection>scm:git:git@github.com:Terradue/dcs-doris-tsx.git</connection>
